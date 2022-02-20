@@ -1,0 +1,63 @@
+####QUESTÃO 01 – LINGUAGEM C####
+
+#include <stdio.h>
+
+int main() {
+  int i, j, n;
+  
+    printf("Digite o valor de n");
+    scanf("%d",&n);
+
+  for(i=1; i<=n; i++) {
+      for(j=1; j <= i; j++) {
+        }
+        printf("\n");
+    }
+
+  printf("*\n"     );
+  printf("**\n"    );
+  printf("***\n"   );
+  printf("****\n"  );
+  printf("*****\n" );
+  printf("******\n");
+
+    
+    return 0;
+}
+
+
+#####2 º QUESTÃO - PYTHON#####
+
+
+import string
+from random import random, choice
+
+valores = string.ascii_letters # todas as letras
+
+valores += string.digits # numeros de 0 a 9
+
+valores += string.punctuation # caracteres especiais
+
+tamanho = 6
+senha = ""
+
+for i in range (tamanho):
+ senha += choice(valores)
+
+print(senha)
+
+
+
+
+####3º QUESTÃO - PYTHON####
+
+def check(s1, s2): 
+
+              if(sorted(s1)== sorted(s2)): 
+        print("É ANAGRAMA.")  
+    else: 
+        print("NÃO É ANAGRAMA.")          
+          
+s1 ="Alegria"
+s2 ="Alergia" 
+check(s1, s2)
